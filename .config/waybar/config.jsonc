@@ -8,28 +8,26 @@
     // Choose the order of the modules
     "modules-left": [
         "hyprland/workspaces",
-        "hyprland/mode",
-        "hyprland/scratchpad",
+	"hyprland/window"
     ],
     "modules-center": [
-        "hyprland/window"
+        "clock"
     ],
     "modules-right": [
         //"mpd",
         //"idle_inhibitor",
         "pulseaudio",
-        "network",
         "power-profiles-daemon",
         //"cpu",
         //"memory",
         //"temperature",
-	"backlight",
-        "keyboard-state",
+	    "backlight",
+        //"keyboard-state",
         //"hyprland/language",
         "battery",
-        "battery#bat2",
-        "clock",
-        "tray",
+        //"battery#bat2",
+        "network",
+        "tray"
     ],
     // Modules configuration
     // "hyprland/workspaces": {
@@ -83,8 +81,8 @@
     },
     "backlight": {
         // "device": "acpi_video1",
-        "format": "{percent}% {icon}",
-        "format-icons": ["", "", "", "", "", "", "", "", ""]
+        "format": "{icon}  {percent}%",
+        "format-icons": [""]
     },
     "battery": {
         "states": {
@@ -106,21 +104,21 @@
     },
     "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface
-        "format-wifi": "{essid} ({signalStrength}%) ",
+        "format-wifi": "",
         "format-ethernet": "{ipaddr}/{cidr} ",
-        "tooltip-format": "{ifname} via {gwaddr} ",
+        "tooltip-format": "{ifname} via {gwaddr} \n{essid}",
         "format-linked": "{ifname} (No IP) ",
         "format-disconnected": "Disconnected ⚠",
         "format-alt": "{ifname}: {ipaddr}/{cidr}"
     },
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
-        "format": "{volume}% {icon} {format_source}",
+        "format": "{icon} {format_source} {volume}%",
         "format-bluetooth": "{volume}% {icon} {format_source}",
         "format-bluetooth-muted": " {icon} {format_source}",
         "format-muted": " {format_source}",
-        "format-source": "",
-        "format-source-muted": "",
+        "format-source": "",
+        "format-source-muted": "",
         "format-icons": {
             "headphone": "",
             "hands-free": "",
