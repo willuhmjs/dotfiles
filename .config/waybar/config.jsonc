@@ -26,7 +26,7 @@
         "timezone": "America/New_York",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
         "format": "{:%I:%M %p}",
-        "format-alt": "{:%Y-%m-%d}"
+        "format-alt": "{:%m/%d/%Y}"
     },
     "backlight": {
         "format": "{icon}  {percent}%",
