@@ -17,9 +17,9 @@
         "tray",
         "pulseaudio",
         "power-profiles-daemon",
-	    "backlight",
-        "battery"
-        //"network"
+	"backlight",
+        "battery",
+        "network"
     ],
     // Modules configuration
     "clock": {
@@ -50,7 +50,7 @@
         "tooltip-format": "{ifname} via {gwaddr} \n{essid}",
         "format-linked": "{ifname} (No IP) ",
         "format-disconnected": "Disconnected ⚠",
-        "format-alt": "{ifname}: {ipaddr}/{cidr}"
+        "on-click": "iwgtk"
     },
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
